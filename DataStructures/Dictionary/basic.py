@@ -6,3 +6,7 @@ alien_0['speed'] = 'medium'     # 添加键值对
 alien_0['x_position'] = alien_0['x_position'] + 2   # 修改字典值
 
 del alien_0['x_position']
+
+#	漂亮打印
+import pprint
+pprint.pprint(count)
