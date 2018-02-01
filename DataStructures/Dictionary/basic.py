@@ -9,4 +9,4 @@ del alien_0['x_position']
 
 #	漂亮打印
 import pprint
-pprint.pprint(count)
+pprint.pprint(alien_0)
