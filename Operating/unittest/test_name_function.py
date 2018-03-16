@@ -1,6 +1,6 @@
 import unittest
 
-from Algorithm.unittest.name_function import get_formatted_name
+from Operating.unittest.name_function import get_formatted_name
 
 
 class NamesTestCase(unittest.TestCase):

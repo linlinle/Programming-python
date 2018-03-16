@@ -1,4 +1,4 @@
-from Algorithm.unittest.name_function import get_formatted_name
+from Operating.unittest.name_function import get_formatted_name
 
 print("Enter 'q' at any time to quit.")
 while True:

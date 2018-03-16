@@ -1,4 +1,4 @@
-from Algorithm.unittest.survey import AnonymousSurvey
+from Operating.unittest.survey import AnonymousSurvey
 
 # Define a question, and make a survey object.
 question = "What language did you first learn to speak?"

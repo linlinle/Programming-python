@@ -1,6 +1,6 @@
 import unittest
 
-from Algorithm.unittest.survey import AnonymousSurvey
+from Operating.unittest.survey import AnonymousSurvey
 
 
 class TestAnonymousSurvey(unittest.TestCase):
