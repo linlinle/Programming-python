@@ -29,3 +29,14 @@ print(s.split('-'))
 t = ['pining', 'for', 'the', 'fjords']
 delimiter = ' '
 print(delimiter.join(t))
+
+#求交集的两种方式
+retA = [i for i in t if i in s]
+retB = list(set(t).intersection(set(s)))
+
+# 求并集
+retC = list(set(t).union(set(s)))
+
+# 求得两个list的差集
+retD = list(set(t).difference(set(s)))
+
