@@ -1,7 +1,8 @@
 
-def inplace_quick_sort(S, a, b):
+def quickSort(S, a, b):
   """Sort the list from S[a] to S[b] inclusive using the quick-sort algorithm."""
-  if a >= b: return                                      # range is trivially sorted
+  if a >= b:
+    return S                                   # range is trivially sorted
   pivot = S[b]                                           # last element of range is pivot
   left = a                                               # will scan rightward
   right = b-1                                            # will scan leftward
@@ -19,5 +20,10 @@ def inplace_quick_sort(S, a, b):
   # put pivot into its final place (此时left > right)
   S[left], S[b] = S[b], S[left]
   # make recursive calls
-  inplace_quick_sort(S, a, left - 1)
-  inplace_quick_sort(S, left + 1, b)
+  quickSort(S, a, left - 1)
+  quickSort(S, left + 1, b)
+
+  return S
+
+
+print(quickSort([27,38,13,49,76,97,65],0,6))
