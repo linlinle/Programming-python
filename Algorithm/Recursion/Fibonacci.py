@@ -14,6 +14,16 @@ def good_fibonacci(n):
         (a, b)= good_fibonacci(n-1)
         return (a+b, a)
 
+def list_storage(n):
+    arr = [0,1,1]
+    while n >arr[-1]:
+        arr.append(arr[-1] + arr[-2])
+    return arr[-1]
+def fast_get(n):
+    x,y = 0,1
+    while 1:
+        if y>=n:return y
+        x,y = y, x+y
+
 if __name__ == '__main__':
-    print(bad_fibonacci(5))
-    print(good_fibonacci(5))
+    print(fast_get(5))

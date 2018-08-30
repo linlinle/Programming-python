@@ -6,3 +6,5 @@ import numpy as np
 data_x = pd.read_csv("file_path",usecols=[2,3,4])#pd.dataframe
 train_data = np.array(data_x)#np.ndarray()
 train_x_list=train_data.tolist()#list
+
+

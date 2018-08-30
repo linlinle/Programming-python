@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 '''输入一组数，找出三个相乘最大的值'''
-import sys
 def getLargestMul(array):
     max1 = 0; max2 = 0; max3 = 0;min1 = 0; min2 = 0
     for i in array:
@@ -23,10 +22,10 @@ def getLargestMul(array):
     maximuix = max((max1*max2*max3),(max1*min1*min2))
     print(maximuix)
 
-
-line1 =int( sys.stdin.readline().strip('\n'))
-line2 = sys.stdin.readline().strip('\n').split(' ')
-arr = []
-for i in line2:
-    arr.append(int(i))
-getLargestMul(arr)
+if __name__=="__main__":
+    line1 =int( input().strip('\n'))
+    line2 = input().strip('\n').split(' ')
+    arr = []
+    for i in line2:
+        arr.append(int(i))
+    getLargestMul(arr)
