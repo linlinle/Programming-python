@@ -3,16 +3,11 @@
 
 class Solution:
     def Find_lower_left(self,target,array):
-
-        #找出最大行列
+        """        从左下向右上检测        """
         cols = len(array[0])-1
         rows = len(array)-1
-
-        # 设置i，j为起始位置(左下角)
         i = rows
         j=0
-
-        #最大边界检测
         while j<=cols and i>=0:
             if target>array[i][j]:
                 j +=1
@@ -24,13 +19,12 @@ class Solution:
         return False
 
     def Find_upper_right(self,target,array):
+        """        从右上向左下检测       """
 
         rows = len(array)-1
         cols = len(array[0])-1
-
         i = 0
         j = cols
-
         while i<=rows and j >=0:
             if target>array[i][j]:
                 i +=1
@@ -44,8 +38,7 @@ class Solution:
 
 if __name__=="__main__":
     solution = Solution()
-    target = 12
+    target = 11
     array = [[1,3,5],[7,9,11],[13,15,17]]
-    array_1 = [[2,4,6],[8,10,12],[14,16,18]]
     print(solution.Find_lower_left(target,array))
-    print(solution.Find_lower_left(target,array_1))
+    print(solution.Find_upper_right(target,array))

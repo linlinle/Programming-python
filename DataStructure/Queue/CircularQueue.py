@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 class CircularQueue:
-    '''Queue implementation using circularly linked list for storage.'''
+    '''使用循环链表实现队列的存储。'''
     class _Node:
         __slots__ = '_element','_next'
 
@@ -47,6 +47,6 @@ class CircularQueue:
         self._size +=1
 
     def rotat(self):
-        '''Rotate front element to the back of the queue.'''
+        '''将前部元素旋转到队列的后面'''
         if self._size > 0:
             self._tail = self._tail._next

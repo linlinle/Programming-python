@@ -12,7 +12,7 @@ def ShellSort(S):
                 S[i], S[i - h] = S[i - h], S[i]
                 i -= h
         
-        h = int(h/3)
+        h = h//3
 S = [4,3,5,5,6,1,1,3,46256,5,66,562,6,46,2]
 ShellSort(S)
 print(S)

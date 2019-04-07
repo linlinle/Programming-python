@@ -3,7 +3,8 @@ from collections import MutableMapping
 
 class MapBase(MutableMapping):
   """Our own abstract base class that includes a nonpublic _Item class.
-  集合模块提供了两个与当前讨论相关的抽象基类:Mapping和MutableMapping类。Mapping类包含Python的dict类支持的所有非突变方法，而MutableMapping类扩展该方法以包含突变方法。
+  集合模块提供了两个与当前讨论相关的抽象基类:Mapping和MutableMapping类。Mapping类包含Python的dict类支持的所有非突变方法，
+  而MutableMapping类扩展该方法以包含突变方法。
   """
 
   #------------------------------- nested _Item class -------------------------------

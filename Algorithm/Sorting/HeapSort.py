@@ -9,7 +9,6 @@ def HeapqSort(S):
         heapq.heappush(h, value)
     return [heapq.heappop(h) for i in range(len(h))]
 
-
 def heap_sort(lst):
     for start in range(len(lst) - 1, -1, -1):
         siftdown(lst, start, len(lst) - 1)

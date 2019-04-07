@@ -104,5 +104,7 @@ if __name__ == '__main__':
     l.add_last(5)
     l.add_first(9)
     l.add_first(3)
+    print(l.first())
+    print(l.after(l.first()).element())
     insertion_sort(l)
     print(l)

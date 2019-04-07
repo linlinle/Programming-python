@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from DataStructure.stack.ArrayStack import ArrayStack
-from DataStructure.stack.LinkedStack import LinkedStack
+from DataStructure.Stack.ArrayStack import ArrayStack
+from DataStructure.Stack.LinkedStack import LinkedStack
 
 def reverse_file(file_name):
     '''Overwrite given file with its contents line-by-line reversed.'''

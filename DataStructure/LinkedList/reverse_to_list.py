@@ -5,13 +5,16 @@ class ListNode:
         self.next = None
 
 class Solution:
-    # 返回从尾部到头部的列表值序列，例如[1,2,3]
+    """
+    反向打印链表
+    """
     def printListFromTailToHead(self, listNode):
         # write code here
         pre_header = listNode
         result = []
         while pre_header != None:
-            # result.append(pre_header.val)         # return result[::-1] or result.reverse()
+            #result.append(pre_header.val)
+            #  return result[::-1] or result.reverse()
             result.insert(0,pre_header.val)
             pre_header = pre_header.next
 
@@ -32,4 +35,4 @@ if __name__ == "__main__":
     Node_1.next = Node_2
     Node_2.next = Node_3
 
-    print(solution.printListFromTailToHead_1(Node_1))
+    print(solution.printListFromTailToHead(Node_1))

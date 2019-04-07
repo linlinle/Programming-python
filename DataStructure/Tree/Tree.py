@@ -74,6 +74,7 @@ class Tree:
                 yield p
 
     def _subtree_preorder(self, p):
+        """迭代器"""
         yield p                                         #先对p进行访问
         for c in self.children(p):
             for other in self._subtree_preorder(c):

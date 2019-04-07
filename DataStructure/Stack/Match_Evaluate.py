@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from DataStructure.stack.ArrayStack import ArrayStack
-from DataStructure.stack.LinkedStack import LinkedStack
+from DataStructure.Stack.ArrayStack import ArrayStack
+from DataStructure.Stack.LinkedStack import LinkedStack
 
 
 def match_math(expr):
@@ -18,10 +18,9 @@ def match_math(expr):
                 return False
     return S.is_empty()
 
-def Evaluate():
+def Evaluate(expr):
     ops = LinkedStack()
     vals = LinkedStack()
-    expr = input()
     for i in expr:
         if i == '(':
             pass
@@ -51,8 +50,8 @@ def Evaluate():
             vals.push(v)
         else:
             vals.push(int(i))
-    print(vals.pop())
+    return vals.pop()
 
 
 if __name__ == '__main__':
-   print( match_math('(1+(2*2))'))
+   print( Evaluate('(1+(2*2))'))
