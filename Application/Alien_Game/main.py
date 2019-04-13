@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
-import Book.Alien.game_functions as gf
+import Application.Alien_Game.game_functions as gf
 import pygame
-from Book.Alien.button import Button
-from Book.Alien.game_stats import GameStats
-from Book.Alien.scoreboard import Scoreboard
-from Book.Alien.settings import Settings
+from Application.Alien_Game.button import Button
+from Application.Alien_Game.game_stats import GameStats
+from Application.Alien_Game.scoreboard import Scoreboard
+from Application.Alien_Game.settings import Settings
 from pygame.sprite import Group
 
 from Application.Alien_Game.ship import Ship

@@ -1,6 +1,6 @@
 
 from DataStructure.Tree.linked_binary_tree import LinkedBinaryTree
-from DataStructure.Map.MapBase import MapBase
+from DataStructure.Map.map_base import MapBase
 
 class TreeMap(LinkedBinaryTree, MapBase):
   """Sorted map implementation using a binary search tree."""

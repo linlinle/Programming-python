@@ -20,3 +20,4 @@ def decorated_merge_sort(data, key=None):
   if key is not None:
     for j in range(len(data)):
       data[j] = data[j]._value                        # undecorate each element
+

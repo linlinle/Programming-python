@@ -1,4 +1,5 @@
-#! python3
+# -*- coding: utf-8 -*-
+
 # combinePdfs.py - Combines all the PDFs in the current working directory into 
 # a single PDF.
 

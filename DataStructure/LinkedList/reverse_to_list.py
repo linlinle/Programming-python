@@ -8,7 +8,7 @@ class Solution:
     """
     反向打印链表
     """
-    def printListFromTailToHead(self, listNode):
+    def print_list_from_tail_to_head(self, listNode):
         # write code here
         pre_header = listNode
         result = []
@@ -20,10 +20,10 @@ class Solution:
 
         return result
 
-    def printListFromTailToHead_1(self, listNode):
+    def print_list_from_tail_to_head_1(self, listNode):
         #   递归的方法
         if listNode is not None:
-            return list(self.printListFromTailToHead_1(listNode.next))+ list([listNode.val])
+            return list(self.print_list_from_tail_to_head_1(listNode.next)) + list([listNode.val])
         else:
             return []
 
@@ -35,4 +35,4 @@ if __name__ == "__main__":
     Node_1.next = Node_2
     Node_2.next = Node_3
 
-    print(solution.printListFromTailToHead(Node_1))
+    print(solution.print_list_from_tail_to_head(Node_1))

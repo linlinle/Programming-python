@@ -5,7 +5,7 @@ import sys
 from time import sleep
 
 import pygame
-from Book.Alien.alien import Alien
+from Application.Alien_Game.alien import Alien
 
 from Application.Alien_Game.bullet import Bullet
 

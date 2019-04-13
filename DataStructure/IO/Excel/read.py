@@ -32,7 +32,7 @@ sheet.get_highest_row() # 7
 sheet.get_highest_column() # 3
 
 # 列字母和数字之间的转换
-from openpyxl.cell import get_column_letter, column_index_from_string
+from openpyxl.utils import get_column_letter, column_index_from_string
 get_column_letter(1) # 'A'
 get_column_letter(2) # 'B'
 get_column_letter(27) # 'AA'

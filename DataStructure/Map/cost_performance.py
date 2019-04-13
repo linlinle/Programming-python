@@ -1,5 +1,5 @@
 
-from DataStructure.Map.SortedTableMap import SortedTableMap
+from DataStructure.Map.sorted_table_map import SortedTableMap
 
 class CostPerformanceDatabase:
   """Maintain a database of maximal (cost,performance) pairs."""
